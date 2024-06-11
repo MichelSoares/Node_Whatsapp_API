@@ -1,0 +1,7 @@
+Node_Whatsapp_API
+Esta é uma aplicação API Node que utiliza a biblioteca whatsapp-web.js (https://docs.wwebjs.dev/). Através dessa biblioteca, é possível conectar-se ao WhatsApp Web lendo o QR Code de autenticação, por sua a lib whatsapp-web.js usa no background uma lib de alto nível para controlar programaticamente o Chrome (puppeteer). Esta biblioteca é orientada por eventos, aproveitando os próprios eventos disponíveis no WhatsApp Web. de forma simplificada esta aplicação server como um "broker não oficial do WhatsApp" no qual "escutando estes eventos" interajo com minha plataforma Omnichannel atraves de uma API simples em PHP e outra em .NET Core. Esta API tem somente um único endpoint "/messages/send", porem tem interações com varios eventos da lib.
+
+nodepgWS
+Neste diretório, você encontrará a API simples em PHP, que consiste nos endpoints para interações com a aplicação Node.
+
+Esta aplicação foi testada no sistema operacional CentOS 8 minimal, utilizando o utilitário PM2 para o gerenciamento de processos. Além disso, neste repositório, encontra-se um arquivo "script_node.sh" que facilita a criação, atualização e monitoramento de novos clientes, bem como a preparação do ambiente do servidor. OBS: não disponibilizarei o código da API .NET Core e os objetos da base de dados Posgtresql, creio que API conforme descrita dá uma boa noção de como integrar em seu software.
